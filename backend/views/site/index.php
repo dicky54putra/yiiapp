@@ -2,9 +2,9 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = ' ';
 ?>
-<div class="site-index">
+<div class="site-index" style="background-color: red; background-size: ; ">
 
     <div class="jumbotron">
         <h1>Welcome to my page!</h1>

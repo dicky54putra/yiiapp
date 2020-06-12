@@ -45,6 +45,7 @@ class Student extends \yii\db\ActiveRecord
             'nama' => 'Nama',
             'alamat' => 'Alamat',
             'tanggal_lahir' => 'Tanggal Lahir',
+            'id_kelas' => 'Kelas',
         ];
     }
 }
