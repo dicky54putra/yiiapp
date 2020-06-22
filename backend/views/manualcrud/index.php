@@ -17,7 +17,7 @@ $this->title = 'crudManual';
 <div class="row">
     <div class="col-md-2">
         <div class="list-group">
-            <a href="<?= Url::to(['manual-crud/add']); ?>" class="list-group-item">Add Student</a>
+            <a href="<?= Url::to(['manualcrud/add']); ?>" class="list-group-item">Add Student</a>
             <a href="<?= Url::to(['manual-crud/delete-all']); ?>" class="list-group-item">Delete All</a>
         </div>
     </div>

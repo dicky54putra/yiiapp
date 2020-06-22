@@ -1,7 +1,9 @@
 <?php
 
+use app\models\Kelas;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\helpers\ArrayHelper;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Student */
@@ -20,7 +22,10 @@ use yii\widgets\ActiveForm;
         'language' => 'id',
         'class' => 'form-control',
         'dateFormat' => 'yyyy-MM-dd',
+        'options' => ['class' => 'form-control', 'autocomplete' => 'off']
     ]) ?>
+
+    <?= $form->field($model, 'id_kelas')->dropDownList(ArrayHelper::map(Kelas::find()->all(), 'id_kelas', 'kelas'), ['Prompt' => 'Pilih Kelas']) ?>
 
 
     <div class="form-group">

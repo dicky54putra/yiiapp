@@ -48,4 +48,9 @@ class Student extends \yii\db\ActiveRecord
             'id_kelas' => 'Kelas',
         ];
     }
+
+    public function getkelas()
+    {
+        return $this->hasOne(Kelas::className(), ['id_kelas' => 'id_kelas']);
+    }
 }

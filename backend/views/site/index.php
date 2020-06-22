@@ -4,10 +4,10 @@
 
 $this->title = ' ';
 ?>
-<div class="site-index" style="background-color: red; background-size: ; ">
+<div class="site-index">
 
     <div class="jumbotron">
-        <h1>Welcome to my page!</h1>
+        <h1>Welcome to my page! <?= Yii::$app->user->identity->username ?></h1>
 
         <p class="lead">This is my first application where I build with yii framework.</p>
 

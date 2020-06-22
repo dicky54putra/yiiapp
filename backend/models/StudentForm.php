@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace app\models;
 
@@ -17,8 +17,17 @@ class StudentForm extends Model
             'nama' => 'Nama',
             'alamat' => 'Alamat',
             'tanggal_lahir' => 'Tanggal Lahir',
-            'nama' => 'Nama',
-        ]
+            'id_kelas' => 'Kelas',
+        ];
     }
 
+    public function rules()
+    {
+        return [
+            ['nama', 'required', 'message' => 'Nama Tidak Boleh Kosong.'],
+            ['nama', 'string', 'max' => '50'],
+            ['alamat', 'required', 'message' => 'Alamat Tidak Boleh Kosong.'],
+            ['alamat', 'string', 'max' => '50'],
+        ];
+    }
 }
